@@ -1,0 +1,40 @@
+.program {
+
+  color: @white;
+
+  &-wrapper {
+    position: relative;
+    width: 320px;
+    height: 304px;
+    background-color: @green;
+    z-index: -1;
+  }
+
+  &-wrapper::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 304px;
+    background-image: url(../img/cat_program.jpg);
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    color: @white;
+    background-color: @green;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
