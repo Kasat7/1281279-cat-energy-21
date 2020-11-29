@@ -1,11 +1,21 @@
 .site-list {
   list-style: none;
+
+  &__item {
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: @black;
+    }
+  }
 }
 
-.site-list__item {
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: @black;
+@media (min-width: @desktop-width) {
+  .site-list {
+    &__item {
+      a {
+        color: @white;
+      }
+    }
   }
 }

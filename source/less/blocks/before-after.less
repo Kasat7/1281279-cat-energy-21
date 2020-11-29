@@ -14,6 +14,8 @@
 
   &__list-top {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__paragraph-bottom {
@@ -34,10 +36,61 @@
 
   &__list-bottom {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item-bottom {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .before-after {
+    &__wrapper-top {
+      background-color: @white;
+    }
+
+    h2 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__paragraph-top {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__item-paragraph-top {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__item-paragraph-bottom {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    &__item-bottom {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after {
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+      display: block;
+    }
   }
 }

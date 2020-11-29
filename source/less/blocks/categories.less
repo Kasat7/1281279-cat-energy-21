@@ -27,3 +27,32 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .categories {
+    h3 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+  }
+}

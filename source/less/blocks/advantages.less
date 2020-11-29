@@ -39,3 +39,30 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    h2 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
