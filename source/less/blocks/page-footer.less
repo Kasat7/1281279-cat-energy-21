@@ -1,5 +1,17 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+
+  &__wrapper-link {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .social__list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright__link {
@@ -7,4 +19,10 @@
   line-height: 18px;
   text-decoration: none;
   color: @gray__footer;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-footer {
+    flex-direction: column;
+  }
 }
