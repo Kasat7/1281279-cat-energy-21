@@ -3,14 +3,29 @@
     font-size: 24px;
     line-height: 26px;
   }
+}
 
-  &__list {
-    list-style: none;
+.form-additionally__list {
+  list-style: none;
+}
+
+.form-additionally__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .form-additionally__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  &__label {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
+@media (min-width: @desktop-width) {
+  .form-additionally__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

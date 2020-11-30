@@ -1,11 +1,12 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
 
-  &__wrapper-link {
-    display: flex;
-    justify-content: space-between;
-  }
+.page-footer__wrapper-link {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__list {
@@ -21,8 +22,8 @@
   color: @gray__footer;
 }
 
-@media (max-width: @mobile-width-only) {
+@media (min-width: @tablet-width) {
   .page-footer {
-    flex-direction: column;
+    flex-direction: row;
   }
 }

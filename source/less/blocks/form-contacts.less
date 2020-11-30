@@ -3,26 +3,59 @@
     font-size: 24px;
     line-height: 26px;
   }
+}
 
-  &__list {
-    list-style: none;
-  }
+.form-contacts__list {
+  list-style: none;
+}
 
-  &__label,
-  &__input {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.form-contacts__label,
+.form-contacts__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
-  &__input-email {
-    width: 204px;
+.form-contacts__input-email {
+  min-width: 204px;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.form-contacts__input-tel {
+  min-width: 188px;
+  height: 45px;
+  padding-left: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-contacts__input-email {
+    min-width: 536px;
     height: 45px;
     padding-left: 15px;
   }
 
-  &__input-tel {
-    width: 188px;
+  .form-contacts__input-tel {
+    min-width: 519px;
+    height: 45px;
+    padding-left: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-contacts__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-contacts__input-email {
+    min-width: 471px;
+    height: 45px;
+    padding-left: 15px;
+  }
+
+  .form-contacts__input-tel {
+    min-width: 456px;
     height: 45px;
     padding-left: 16px;
   }
