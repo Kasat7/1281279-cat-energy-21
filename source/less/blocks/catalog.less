@@ -47,3 +47,40 @@
   color: @gray__footer;
   background-color: @gray;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    h1 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog__link {
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .catalog__table {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog__paragraph {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
