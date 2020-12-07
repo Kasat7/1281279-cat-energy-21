@@ -1,36 +1,57 @@
 .program {
   color: @white;
+}
 
-  h2 {
-    font-size: 36px;
-    line-height: 36px;
-    width: 249px;
-    text-align: center;
-  }
+.program__heading {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 27px;
+  padding-top: 27px;
+}
 
-  p {
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-  }
+.program__paragraph {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .program__wrapper {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   min-height: 304px;
-  background-color: @green;
   z-index: -1;
+  margin: 0 auto;
 }
 
 .program__wrapper::before {
   position: absolute;
   content: "";
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 304px;
+  background-color: @green;
+  z-index: -1;
+}
+
+.program__wrapper::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
   width: 320px;
   height: 304px;
   background-image: url("../img/cat_program.jpg");
-  opacity: 0.5;
   z-index: -1;
+  opacity: 0.2;
+}
+
+.program__image {
+  margin-left: 20px;
 }
 
 .program__link {
@@ -38,6 +59,8 @@
   background-color: @green;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 8px 64px;
+  margin-left: 20px;
 }
 
 @media (min-width: @tablet-width) {

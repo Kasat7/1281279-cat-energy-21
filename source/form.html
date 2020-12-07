@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -13,8 +15,8 @@
   <header class="page-header">
     <div class="container">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип">
-        <img class="page-header__logo-image" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип">
+        <img class="page-header__logo-image-left" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип">
+        <img class="page-header__logo-image-right" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
@@ -39,15 +41,18 @@
           <ul class="form-program__list">
             <li class="form-program__item">
               <label class="form-program__label" for="form-name">Имя:*</label>
-              <input class="form-program__input form-program__input-name" id="form-name" type="text" placeholder="Барсик" name="name" required>
+              <input class="form-program__input form-program__input-name" id="form-name" type="text"
+                placeholder="Барсик" name="name" required>
             </li>
             <li class="form-program__item">
               <label class="form-program__label" for="form-weight">Вес (кг):*</label>
-              <input class="form-program__input form-program__input-weight" id="form-weight" type="text" placeholder="7" name="weight" required>
+              <input class="form-program__input form-program__input-weight" id="form-weight" type="text" placeholder="7"
+                name="weight" required>
             </li>
             <li class="form-program__item">
               <label class="form-program__label" for="form-age">Возраст (лет):</label>
-              <input class="form-program__input form-program__input-age" id="form-age" type="text" placeholder="7" name="age">
+              <input class="form-program__input form-program__input-age" id="form-age" type="text" placeholder="7"
+                name="age">
             </li>
           </ul>
         </div>
@@ -75,13 +80,13 @@
         <ul class="form-contacts__list">
           <li class="form-contacts__item">
             <label class="form-contacts__label" for="form-email">e-mail:*</label>
-            <input class="form-contacts__input form-contacts__input-email" type="email" placeholder="kuklachev@gmail.com" id="form-email"
-              name="email" required>
+            <input class="form-contacts__input form-contacts__input-email" type="email"
+              placeholder="kuklachev@gmail.com" id="form-email" name="email" required>
           </li>
           <li class="form-contacts__item">
             <label class="form-contacts__label" for="form-phone">Телефон:*</label>
-            <input class="form-contacts__input form-contacts__input-tel" type="tel" placeholder="8 (960) 900-60-90" id="form-phone" name="phone"
-              required>
+            <input class="form-contacts__input form-contacts__input-tel" type="tel" placeholder="8 (960) 900-60-90"
+              id="form-phone" name="phone" required>
           </li>
         </ul>
       </section>
@@ -126,7 +131,8 @@
       <p class="contacts__paragraph-top">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__paragraph-bottom">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div class="contacts__map">
-        <img class="contacts__map-image" src="img/map.png" width="320" height="362" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <img class="contacts__map-image" src="img/map.png" width="320" height="362"
+          alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
     </section>
   </main>
@@ -143,7 +149,8 @@
       </li>
       <li class="social__item instagram">
         <a class="social__link social__link-instagram" aria-label="instagram" href="#">
-          <img class="social__image-instagram" src="img/icon_instagram.svg" width="16" height="16" alt="Иконка Instagram">
+          <img class="social__image-instagram" src="img/icon_instagram.svg" width="16" height="16"
+            alt="Иконка Instagram">
         </a>
       </li>
       <li class="social__item facebook">
@@ -154,7 +161,7 @@
     </ul>
     <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
     <a class="copyright__link-logo" href="http://htmlacademy.ru" aria-label="Переход на сайт в HTML Academy">
-    <img class="copyright__link-logo-image" src="img/logo_html.svg" width="27" height="34" alt="Логотип HTML Academy">
+      <img class="copyright__link-logo-image" src="img/logo_html.svg" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </footer>
 
