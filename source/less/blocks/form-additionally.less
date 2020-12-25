@@ -1,31 +1,146 @@
 .form-additionally {
+  position: relative;
+
   h2 {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 24px;
     line-height: 26px;
+    font-weight: 400;
   }
+}
+
+.form-additionally::after {
+  content: "";
+  position: absolute;
+  width: 136px;
+  top: 13px;
+  right: -20px;
+  height: 2px;
+  background-color: @green;
 }
 
 .form-additionally__list {
   list-style: none;
+  margin-left: 5px;
+  margin-top: 34px;
+}
+
+.form-additionally__item {
+  margin-bottom: 18px;
 }
 
 .form-additionally__label {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
+.form-additionally__label::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid @gray__borde-before-after;
+}
+
+.form-additionally__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -43px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon_tick.svg");
+}
+
 @media (min-width: @tablet-width) {
+  .form-additionally {
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+      margin-left: 40px;
+      margin-top: 59px;
+    }
+  }
+
+  .form-additionally::after {
+    width: 446px;
+    top: 22px;
+    right: -30px;
+  }
+
+  .form-additionally::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    top: 22px;
+    left: -30px;
+    height: 2px;
+    background-color: @green;
+  }
+
   .form-additionally__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 58px;
+    margin-top: 62px;
+    column-gap: 79px;
+    row-gap: 25px;
+  }
+
+  .form-additionally__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-additionally__label::before {
+    left: -58px;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-additionally__input:checked + label::after {
+    left: -51px;
+    top: 2px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form-additionally {
+    h2 {
+      margin-left: 0;
+      margin-top: 61px;
+    }
+  }
+
+  .form-additionally::after {
+    width: 1078px;
+    top: 22px;
+    right: -110px;
+  }
+
+  .form-additionally::before {
+    width: 70px;
+    top: 22px;
+    left: -110px;
+  }
+
   .form-additionally__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 19px;
+    width: 1065px;
+  }
+
+  .form-additionally__item:nth-child(2) {
+    margin-right: 34px;
+  }
+
+  .form-additionally__item:nth-child(3) {
+    margin-right: 94px;
   }
 }
