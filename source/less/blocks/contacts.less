@@ -31,6 +31,10 @@
   position: relative;
 }
 
+.contacts__wrapper-form {
+  background-color: @gray;
+}
+
 @media (min-width: @tablet-width) {
   .contacts {
     span {
@@ -38,6 +42,10 @@
       top: 84px;
       right: 1px;
     }
+  }
+
+  .contacts__wrapper-form {
+    padding-top: 20px;
   }
 
   .contacts__wrapper {
@@ -81,19 +89,24 @@
 @media (min-width: @desktop-width) {
   .contacts {
     position: relative;
-    margin-top: -50px;
+    margin-top: 9px;
   }
 
   .contacts .container {
     width: 570px;
   }
 
+  .contacts__wrapper-form {
+    background-color: @white;
+    padding-top: 0;
+  }
+
   .contacts__wrapper {
     position: absolute;
     height: 201px;
     z-index: 1;
-    top: 96px;
-    left: 133px;
+    top: 95px;
+    left: 186px;
     padding-bottom: 0;
   }
 

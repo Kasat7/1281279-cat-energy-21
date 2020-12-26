@@ -1,63 +1,208 @@
-.form-program__list,
+.form-program {
+  border-bottom: 1px solid @gray-border-categories;
+}
+
+.form-program__wrapper {
+  margin-top: 38px;
+  border-bottom: 1px solid @gray-border-categories;
+  padding-bottom: 8px;
+}
+
+.form-program__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .form-program__list-mass {
   list-style: none;
+  margin: 26px 0 0 0;
+  padding: 0;
+}
+
+.form-program__item {
+  margin-bottom: 14px;
 }
 
 .form-program__label,
 .form-program__input,
 .form-program__label-mass {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
+.form-program__label-mass {
+  position: relative;
+}
+
+.form-program__label-mass::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: -4px;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid @gray__borde-before-after;
+}
+
+.form-program__input-mass:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -37px;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  background-color: @green;
+  border-radius: 50%;
+}
+
 .form-program__input-name {
-  min-width: 213px;
-  height: 45px;
-  padding-left: 16px;
+  min-width: 209px;
+  height: 40px;
+  padding-left: 13px;
+  margin-left: 10px;
 }
 
 .form-program__input-weight {
-  min-width: 188px;
-  height: 45px;
-  padding-left: 16px;
+  min-width: 183px;
+  height: 39px;
+  padding-left: 14px;
+  margin-left: 13px;
 }
 
 .form-program__input-age {
-  min-width: 156px;
-  height: 45px;
+  min-width: 150px;
+  height: 40px;
   padding-left: 16px;
+  margin-left: 10px;
+}
+
+.form-program__wrapper-mass {
+  margin-top: 26px;
+}
+
+.form-program__item-mass {
+  margin-bottom: 19px;
+  margin-left: 46px;
 }
 
 @media (min-width: @tablet-width) {
+  .form-program {
+    border: none;
+  }
+
+  .form-program__wrapper {
+    margin-top: 66px;
+    border: none;
+  }
+
+  .form-program__list {
+    margin-left: 41px;
+  }
+
+  .form-program__item {
+    margin-bottom: 21px;
+  }
+
+  .form-program__label,
+  .form-program__input,
+  .form-program__label-mass {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+
   .form-program__input-name {
-    min-width: 551px;
+    min-width: 543px;
+    height: 45px;
+    padding-left: 17px;
+    margin-left: 12px;
   }
 
   .form-program__input-weight {
-    min-width: 520px;
+    min-width: 514px;
+    height: 45px;
+    padding-left: 17px;
+    margin-left: 16px;
   }
 
   .form-program__input-age {
-    min-width: 481px;
+    min-width: 473px;
+    height: 45px;
+    padding-left: 18px;
+    margin-left: 13px;
+  }
+
+  .form-program__wrapper-mass {
+    margin-top: 44px;
+  }
+
+  .form-program__list-mass {
+    width: 628px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin-left: 41px;
+    margin-top: 44px;
+    border: 1px solid @gray__before-form;
+  }
+
+  .form-program__item-mass {
+    margin-bottom: 24px;
+    margin-left: 87px;
+  }
+
+  .form-program__label-mass::before {
+    top: -5px;
+    left: -60px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .form-program__input-mass:checked + label::after {
+    top: 6px;
+    left: -49px;
+    width: 18px;
+    height: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-program {
+    width: 1220px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .form-program__wrapper {
+    margin-top: 46px;
+    width: 609px;
+  }
+
+  .form-program__list {
+    margin-left: 0;
   }
 
   .form-program__input-name {
-    min-width: 490px;
+    min-width: 484px;
   }
 
   .form-program__input-weight {
-    min-width: 459px;
+    min-width: 453px;
   }
 
   .form-program__input-age {
-    min-width: 420px;
+    min-width: 413px;
+  }
+
+  .form-program__list-mass {
+    width: 568px;
+    margin-top: 46px;
   }
 }
