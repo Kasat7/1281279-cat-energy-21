@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -223,31 +221,18 @@
       </div>
 
       <div class="page-footer__wrapper-link">
-        <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
         <a class="copyright__link-logo" href="http://htmlacademy.ru" aria-label="Переход на сайт в HTML Academy">
-          <img class="copyright__link-logo-image" src="img/logo_html.svg" width="27" height="34"
-            alt="Логотип HTML Academy">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo_html-tablet-desktop.svg">
+            <img class="copyright__link-logo-image" src="img/logo_html.svg" width="281" height="34"
+              alt="Логотип HTML Academy">
+          </picture>
         </a>
       </div>
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 

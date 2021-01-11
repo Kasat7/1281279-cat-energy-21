@@ -1,12 +1,43 @@
 .additionally {
+  position: relative;
+
   h2 {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 24px;
     line-height: 24px;
+    font-weight: 400;
+    margin-top: 25px;
   }
+}
+
+.additionally::before {
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 2px;
+  top: 15px;
+  right: -20px;
+  background-color: @green;
+}
+
+.additionally__wrapper-top {
+  margin-top: 35px;
 }
 
 .additionally__list {
   list-style: none;
+  margin: 0;
+  padding: 13px 0 0 0;
+  border-top: 1px solid @gray__borde-before-after;
+  box-sizing: border-box;
+  margin-bottom: 17px;
+  min-height: 112px;
+}
+
+.additionally__list:last-child {
+  margin-bottom: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid @gray__borde-before-after;
 }
 
 .additionally__item-left {
@@ -18,36 +49,77 @@
 .additionally__item-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 13px;
+  margin-bottom: 23px;
 }
 
 .additionally__item {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
 }
 
 .additionally__order {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: @white;
   background-color: @green;
+  text-align: center;
+  padding: 8px 109px;
 }
 
 .additionally__wrapper {
   background-image: url("../img/gift-photo-mobile.jpg");
   width: 280px;
   height: 289px;
+  margin-top: 40px;
 
   p {
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
     color: @white;
+    width: 161px;
+    text-align: center;
+    margin: 45px auto;
   }
 }
 
+.additionally__wrapper-image {
+  margin-top: 57px;
+  width: 280px;
+  text-align: center;
+}
+
 @media (min-width: @tablet-width) {
+  .additionally {
+    h2 {
+      font-size: 36px;
+      line-height: 36px;
+      margin-left: 37px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .additionally::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 22px;
+    left: -30px;
+    background-color: @green;
+  }
+
+  .additionally::before {
+    width: 328px;
+    top: 22px;
+    right: -30px;
+  }
+
   .additionally__item-wrapper-top {
     display: flex;
     justify-content: space-between;
@@ -56,10 +128,85 @@
   .additionally__wrapper {
     display: flex;
     justify-content: space-between;
+    background-image: url("../img/gift-photo-tablet.jpg");
+    width: 708px;
+    height: 200px;
+    margin-top: 69px;
+
+    p {
+      text-align: left;
+      margin-top: 73px;
+      margin-right: 124px;
+    }
+  }
+
+  .additionally__list {
+    padding: 26px 39px 34px;
+    margin-bottom: 0;
+    border: 1px solid @gray__borde-before-after;
+    border-bottom: none;
+  }
+
+  .additionally__list:last-child {
+    padding-bottom: 33px;
+  }
+
+  .additionally__item-left {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additionally__item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additionally__item-wrapper {
+    margin-top: 3px;
+    margin-bottom: 31px;
+  }
+
+  .additionally__item-wrapper-sugar {
+    width: 224px;
+  }
+
+  .additionally__item-wrapper-water {
+    width: 157px;
+  }
+
+  .additionally__item-wrapper-milk {
+    width: 140px;
+  }
+
+  .additionally__item-wrapper-vitamin {
+    width: 215px;
+  }
+
+  .additionally__order {
+    padding: 8px 285px;
+  }
+
+  .additionally__wrapper-image {
+    margin-left: -22px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .additionally {
+    h2 {
+      margin-left: 0;
+    }
+  }
+
+  .additionally::after {
+    left: -70px;
+  }
+
+  .additionally::before {
+    width: 957px;
+    right: -110px;
+  }
+
   .additionally__wrapper-top {
     display: flex;
     justify-content: space-between;
@@ -68,9 +215,57 @@
   .additionally__list {
     display: flex;
     justify-content: space-between;
+    padding: 26px 0;
+    min-height: 72px;
+    height: 72px;
+    border-left: none;
+    border-right: none;
   }
 
   .additionally__wrapper {
     display: block;
+    background-image: url("../img/gift-photo-desktop.jpg");
+    width: 245px;
+    height: 289px;
+    margin-top: 0;
+
+    p {
+      text-align: center;
+      margin-top: 45px;
+      margin-right: 43px;
+    }
+  }
+
+  .additionally__wrapper-image {
+    margin-left: -16px;
+  }
+
+  .additionally__order {
+    padding: 8px 92px;
+  }
+
+  .additionally__item-order {
+    margin-left: 40px;
+    margin-top: -3px;
+  }
+
+  .additionally__item-wrapper-sugar {
+    margin-left: 163px;
+    width: 286px;
+  }
+
+  .additionally__item-wrapper-water {
+    width: 277px;
+    margin-left: 197px;
+  }
+
+  .additionally__item-wrapper-milk {
+    width: 287px;
+    margin-left: 257px;
+  }
+
+  .additionally__item-wrapper-vitamin {
+    width: 285px;
+    margin-left: 236px;
   }
 }
